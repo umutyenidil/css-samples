@@ -5,3 +5,4 @@ In this repository I share components and pages that I created using html, css a
 * [Sample 3](https://umutyenidil.github.io/css-samples/sample-3)
 * [Sample 4](https://umutyenidil.github.io/css-samples/sample-4)
 * [Sample 5](https://umutyenidil.github.io/css-samples/sample-5)
+* [Sample 6](https://umutyenidil.github.io/css-samples/sample-6)
