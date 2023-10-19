@@ -1,0 +1,50 @@
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.cardBox .card{
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    box-shadow: var(--shadow1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cardBox .card .numbers{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--blue);
+}
+
+.cardBox .card .title{
+    font-size: 1.1em;
+    color: var(--black2);
+    margin-top: 5px;
+}
+
+.cardBox .iconBox{
+    font-size: 3.5em;
+    color: var(--black2);
+}
+
+.cardBox .card:hover{
+    background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .title,
+.cardBox .card:hover .iconBox{
+    color: var(--white);
+}
