@@ -61,7 +61,7 @@ body{
     color: var(--blue);
 }
 
-@media (max-width:991px){
+@media (width <= 991px){
     .navigation{
         left: -300px
     }
@@ -85,7 +85,7 @@ body{
     }
 }
 
-@media (max-width:768px){
+@media (width <= 768px){
     .details {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -103,7 +103,7 @@ body{
     }
 }
 
-@media (max-width:480px){
+@media (width <= 480px){
     .cardBox {
         grid-template-columns: repeat(1, 1fr);
     }
