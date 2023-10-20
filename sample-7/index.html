@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample 7</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="navigation-menu.css">
     <link rel="stylesheet" href="topbar.css">
     <link rel="stylesheet" href="card-list.css">
+    <link rel="stylesheet" href="recent-orders.css">
+    <link rel="stylesheet" href="recent-customers.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -21,7 +24,7 @@
                         <span class="title">EntegreMax</span>
                     </a>
                 </li>
-                <li>
+                <li class="hovered">
                     <a href="#">
                         <span class="icon"><i class='bx bxs-dashboard' ></i></span>
                         <span class="title">Dashboard</span>
@@ -71,7 +74,6 @@
             <div class="topbar">
                 <div class="toggle">
                     <i id="open-icon" class='bx bx-menu'></i>
-                    <!-- <i id="close-icon" class='bx bx-x'></i> -->
                 </div>
                 <div class="search">
                     <label for="searchBox">
@@ -121,7 +123,92 @@
                         <i class='bx bx-dollar-circle' ></i>
                     </div>
                 </div>
-            </div>            
+            </div>    
+            
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Umut Yenidil</td>
+                                <td>$200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Umut Yenidil</td>
+                                <td>$300</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Umut Yenidil</td>
+                                <td>$400</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Umut Yenidil</td>
+                                <td>$500</td>
+                                <td>Paid</td>
+                                <td><span class="status in-progress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Umut Yenidil</td>
+                                <td>$200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="avatarBox"><img src="https://doodleipsum.com/100x100/avatar-2?n=1"></div></td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="avatarBox"><img src="https://doodleipsum.com/100x100/avatar-2?n=2"></div></td>
+                            <td><h4>Umut<br><span>Turkey</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="avatarBox"><img src="https://doodleipsum.com/100x100/avatar-2?n=3"></div></td>
+                            <td><h4>Vladislava<br><span>Belarus</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="avatarBox"><img src="https://doodleipsum.com/100x100/avatar-2?n=4"></div></td>
+                            <td><h4>Kasia<br><span>Poland</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="avatarBox"><img src="https://doodleipsum.com/100x100/avatar-2?n=5"></div></td>
+                            <td><h4>Jhon<br><span>England</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="avatarBox"><img src="https://doodleipsum.com/100x100/avatar-2?n=6"></div></td>
+                            <td><h4>Murat<br><span>Scotland</span></h4></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+
+            
         </main>
 
     </div>

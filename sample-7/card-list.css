@@ -14,11 +14,14 @@
     box-shadow: var(--shadow1);
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.cardBox .card .data{
+    display: flex;
+    flex-direction: column;
 }
 
 .cardBox .card .numbers{

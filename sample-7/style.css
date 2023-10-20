@@ -41,3 +41,100 @@ body{
     left: 300px;
 }
 
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.cardHeader h2{
+    font-weight: 600;
+    color: var(--blue);
+}
+
+@media (max-width:991px){
+    .navigation{
+        left: -300px
+    }
+
+    .navigation.active{
+        left: 0;
+        width: 300px;
+    }
+
+    .main{
+        width: 100%;
+        left: 0;
+    }
+
+    .main.shrink{
+        left: 300px;
+    }
+
+    .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px){
+    .details {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recentOrders{
+        overflow-x: auto;
+    }
+
+    .status.in-progress{
+        white-space: nowrap;
+    }
+
+    .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:480px){
+    .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardHeader h2{
+        font-size: 20px;
+    }
+
+    .avatar{
+        min-width: 40px;
+    }
+
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 999;
+    }
+
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+
+    .toggle{
+        z-index: 1000;
+    }
+
+    .main.shrink .toggle{
+        position: fixed;
+        right: 0;
+        left: initial;
+        color: var(--white);
+    }
+}
