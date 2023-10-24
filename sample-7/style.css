@@ -61,7 +61,31 @@ body{
     color: var(--blue);
 }
 
+.graphBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    min-height: 200px;
+}
+
+.graphBox .box{
+    position:relative;
+    background: #fff;
+    padding:20px;
+    width:100%;
+    box-shadow: var(--shadow1);
+    border-radius: 20px;
+}
+
 @media (width <= 991px){
+    .graphBox{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
     .navigation{
         left: -300px
     }

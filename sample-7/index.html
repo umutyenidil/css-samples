@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="recent-orders.css">
     <link rel="stylesheet" href="recent-customers.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="container">
@@ -124,6 +125,15 @@
                     </div>
                 </div>
             </div>    
+
+            <div class="graphBox">
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="myChart2"></canvas>
+                </div>
+            </div>
             
             <div class="details">
                 <div class="recentOrders">
@@ -212,6 +222,9 @@
         </main>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="chart-config.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="topbar.js"></script>
     <script type="text/javascript" src="navigation-menu.js"></script>
