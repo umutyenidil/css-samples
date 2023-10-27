@@ -34,7 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: width 0.5s;
+  transition: width 0.5s, left 0.5s;
 }
 
 .navigation.active {
@@ -329,38 +329,250 @@ section {
   transition: transform 0.5s ease-in-out;
 }
 
-.projects .content .project-box .image-box img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.projects .content .project-box .image-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .projects .content .project-box:hover .image-box {
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .projects .content .project-box .text-box {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(100%);
-    transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .projects .content .project-box:hover .text-box {
-    transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
 }
 
-.projects .content .project-box .text-box h3{
-    color: #fff;
+.projects .content .project-box .text-box h3 {
+  color: #fff;
+}
+
+.testimonials .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.testimonials .content .testimonial-box {
+  background: var(--white2);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonials .content .testimonial-box .image-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.testimonials .content .testimonial-box .image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonials .content .testimonial-box p {
+  font-style: italic;
+  color: #777;
+}
+
+.testimonials .content .testimonial-box h4 {
+  text-align: right;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em;
+  color: var(--black);
+  line-height: 1.2em;
+  font-weight: 600;
+  border-right: 4px solid var(--black2);
+  padding-right: 10px;
+}
+
+.testimonials .content .testimonial-box h4 span {
+  text-transform: initial;
+  color: #aaa;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 0.7em;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .form-box {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.contact .form-box .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact .form-box .row2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact .form-box .row2 textarea,
+.contact .form-box .row input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: var(--black);
+  background: var(--white2);
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-box .row2 textarea {
+  resize: none;
+  height: 200px;
+}
+
+.contact .form-box .row2 input[type="submit"] {
+  background: var(--black2);
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  max-width: 150px;
+  border: none;
+}
+
+.copyright p {
+  position: relative;
+  bottom: 0;
+  padding: 10px 40px;
+  text-align: center;
+  color: #777;
+}
+
+@media (width <= 992px) {
+  .navigation {
+    left: -100%;
+  }
+
+  .navigation.active {
+    left: 0;
+    width: 100%;
+  }
+
+  .main {
+    left:0;
+    width: 100%;
+  }
+
+  .main.active {
+    left: 100%
+  }
+
+  .main .top-bar{
+    left: 0;
+    width: 100%;
+    padding: 0 20px
+  }
+
+  .navigation ul{
+    padding: 20px 20px;
+  }
+
+  .banner .image-box{
+    width: 250px;
+    height: 250px;
+  }
+
+  .banner h3,
+  .banner p{
+    text-align: center;
+  }
+
+  .adjust{
+    padding: 0 20px;
+    padding-top: 80px;
+  }
+
+  .about .content{
+    flex-direction: column;
+  }
+
+  .about .content .text-box{
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .services .content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects .content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 767px) {
+  .services .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .testimonials .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact .form-box .row{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact{
+    margin-bottom: 100px;
+  }
+
+  .copyright{
+    padding: 10px 20px;
+  }
 }

@@ -1,140 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample 8</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      <div class="navigation">
+        <ul>
+          <li><a href="#" onclick="toggleMenu">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu">About</a></li>
+          <li><a href="#services" onclick="toggleMenu">Services</a></li>
+          <li><a href="#projects" onclick="toggleMenu">Project</a></li>
+          <li><a href="#testimonials" onclick="toggleMenu">Testimonials</a></li>
+          <li><a href="#contact" onclick="toggleMenu">Contact</a></li>
+        </ul>
+      </div>
+      <main class="main">
+        <div class="top-bar">
+          <a href="#" class="logo">Portfolio</a>
+          <div class="toggle"><i class="bx bx-menu-alt-right"></i></div>
         </div>
-        <main class="main">
-            <div class="top-bar">
-                <a href="#" class="logo">Portfolio</a>
-                <div class="toggle"><i class='bx bx-menu-alt-right'></i></div>
+
+        <section class="banner" id="banner">
+          <div class="content">
+            <div class="image-box">
+              <img
+                src="https://media.licdn.com/dms/image/C4D03AQHgUF1sevLsaw/profile-displayphoto-shrink_400_400/0/1653405593036?e=1703721600&v=beta&t=UWdR2SGBKWCsmAAf5cStoJ1VHQHoa3uXqK7G3Q8aT2Y"
+              />
             </div>
+            <h3>Umut Yenidil</h3>
+            <p>I'm a Software Developer</p>
+            <a href="#" class="btn">Download my CV</a>
+            <ul class="social-media-buttons">
+              <li>
+                <a href="#"><i class="bx bxl-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-medium"></i></a>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-            <section class="banner" id="banner">
-                <div class="content">
-                    <div class="image-box">
-                        <img src="https://media.licdn.com/dms/image/C4D03AQHgUF1sevLsaw/profile-displayphoto-shrink_400_400/0/1653405593036?e=1703721600&v=beta&t=UWdR2SGBKWCsmAAf5cStoJ1VHQHoa3uXqK7G3Q8aT2Y">
-                    </div>
-                    <h3>Umut Yenidil</h3>
-                    <p>I'm a Software Developer</p>
-                    <a href="#" class="btn">Download my CV</a>
-                    <ul class="social-media-buttons">
-                        <li><a href="#"><i class='bx bxl-github'></i></a></li>
-                        <li><a href="#"><i class='bx bxl-linkedin-square' ></i></a></li>
-                        <li><a href="#"><i class='bx bxl-medium' ></i></a></li>
-                    </ul>
-                </div>
-            </section>
+        <section class="about adjust" id="about">
+          <div class="title">
+            <h2>About me</h2>
+          </div>
+          <div class="content">
+            <div class="text-box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                explicabo saepe assumenda facere ratione eum delectus. Ratione
+                eum dolor at! Explicabo ea ab nihil fugiat autem dolores
+                consequatur est, aliquid praesentium dolore totam, eveniet
+                molestias porro sint! Voluptas praesentium incidunt omnis
+                impedit aut, officia blanditiis libero cumque enim ex at,
+                dolorem harum necessitatibus, repellat rem quidem accusantium
+                deleniti! Aperiam eum quisquam saepe, delectus quos laudantium
+                libero voluptatum dolor eligendi dicta nostrum eveniet quas
+                impedit placeat laboriosam error facilis esse cupiditate illo
+                voluptatibus quo nam. Quis illum quos saepe perspiciatis dolorum
+                vitae quo earum dolor, doloremque aliquam dolore amet, quae ad.
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <section class="about adjust" id="about">
-                <div class="title">
-                    <h2>About me</h2>
-                </div>
-                <div class="content">
-                    <div class="text-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel explicabo saepe assumenda facere ratione eum delectus. Ratione eum dolor at! Explicabo ea ab nihil fugiat autem dolores consequatur est, aliquid praesentium dolore totam, eveniet molestias porro sint! Voluptas praesentium incidunt omnis impedit aut, officia blanditiis libero cumque enim ex at, dolorem harum necessitatibus, repellat rem quidem accusantium deleniti! Aperiam eum quisquam saepe, delectus quos laudantium libero voluptatum dolor eligendi dicta nostrum eveniet quas impedit placeat laboriosam error facilis esse cupiditate illo voluptatibus quo nam. Quis illum quos saepe perspiciatis dolorum vitae quo earum dolor, doloremque aliquam dolore amet, quae ad.</p>
-                    </div>
-                </div>
-            </section>
+        <section class="services adjust" id="services">
+          <div class="title">
+            <h2>Our Services</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              asperiores deserunt aliquam officia id odio corporis unde mollitia
+              qui consequatur.
+            </p>
+          </div>
+          <div class="content">
+            <div class="service-box">
+              <i class="bx bxl-flutter"></i>
+              <h2>Mobile Development</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                autem sint cupiditate iusto laborum eos dolores ad voluptatibus
+                molestias aut.
+              </p>
+            </div>
+            <div class="service-box">
+              <i class="bx bxl-react"></i>
+              <h2>Web Development</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                autem sint cupiditate iusto laborum eos dolores ad voluptatibus
+                molestias aut.
+              </p>
+            </div>
+            <div class="service-box">
+              <i class="bx bxl-figma"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+                autem sint cupiditate iusto laborum eos dolores ad voluptatibus
+                molestias aut.
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <section class="services adjust" id="services">
-                <div class="title">
-                    <h2>Our Services</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores deserunt aliquam officia id odio corporis unde mollitia qui consequatur.</p>
-                </div>
-                <div class="content">
-                    <div class="service-box">
-                        <i class='bx bxl-flutter'></i>
-                        <h2>Mobile Development</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque autem sint cupiditate iusto laborum eos dolores ad voluptatibus molestias aut.</p>
-                    </div>
-                    <div class="service-box">
-                        <i class='bx bxl-react'></i>
-                        <h2>Web Development</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque autem sint cupiditate iusto laborum eos dolores ad voluptatibus molestias aut.</p>
-                    </div>
-                    <div class="service-box">
-                        <i class='bx bxl-figma'></i>
-                        <h2>UI/UX Design</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque autem sint cupiditate iusto laborum eos dolores ad voluptatibus molestias aut.</p>
-                    </div>
-                </div>
-            </section>
+        <section class="projects adjust" id="projects">
+          <div class="title">
+            <h2>My Projects</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              asperiores deserunt aliquam officia id odio corporis unde mollitia
+              qui consequatur.
+            </p>
+          </div>
+          <div class="content">
+            <div class="project-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <div class="text-box">
+                <h3>Project 00</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <div class="text-box">
+                <h3>Project 01</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <div class="text-box">
+                <h3>Project 02</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <div class="text-box">
+                <h3>Project 03</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <div class="text-box">
+                <h3>Project 04</h3>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <div class="text-box">
+                <h3>Project 05</h3>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <section class="projects adjust" id="projects">
-                <div class="title">
-                    <h2>My Projects</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores deserunt aliquam officia id odio corporis unde mollitia qui consequatur.</p>
-                </div>
-                <div class="content">
-                    <div class="project-box">
-                        <div class="image-box">
-                            <img src="https://picsum.photos/200">
-                        </div>
-                        <div class="text-box">
-                            <h3>Project 00</h3>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="image-box">
-                            <img src="https://picsum.photos/200">
-                        </div>
-                        <div class="text-box">
-                            <h3>Project 01</h3>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="image-box">
-                            <img src="https://picsum.photos/200">
-                        </div>
-                        <div class="text-box">
-                            <h3>Project 02</h3>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="image-box">
-                            <img src="https://picsum.photos/200">
-                        </div>
-                        <div class="text-box">
-                            <h3>Project 03</h3>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="image-box">
-                            <img src="https://picsum.photos/200">
-                        </div>
-                        <div class="text-box">
-                            <h3>Project 04</h3>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="image-box">
-                            <img src="https://picsum.photos/200">
-                        </div>
-                        <div class="text-box">
-                            <h3>Project 05</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+        <section class="testimonials adjust" id="testimonials">
+          <div class="title">
+            <h2>Testimonials</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+              illo iusto aliquam voluptates quisquam velit id aliquid dolor a
+              suscipit.
+            </p>
+          </div>
+          <div class="content">
+            <div class="testimonial-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                suscipit, dicta doloremque fuga illum quam nobis! Perspiciatis,
+                aut. Saepe, quisquam?
+              </p>
+              <h4>Someone famous <br /><span>Web designer</span></h4>
+            </div>
+            <div class="testimonial-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                suscipit, dicta doloremque fuga illum quam nobis! Perspiciatis,
+                aut. Saepe, quisquam?
+              </p>
+              <h4>Someone famous <br /><span>Web designer</span></h4>
+            </div>
+            <div class="testimonial-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                suscipit, dicta doloremque fuga illum quam nobis! Perspiciatis,
+                aut. Saepe, quisquam?
+              </p>
+              <h4>Someone famous <br /><span>Web designer</span></h4>
+            </div>
+            <div class="testimonial-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                suscipit, dicta doloremque fuga illum quam nobis! Perspiciatis,
+                aut. Saepe, quisquam?
+              </p>
+              <h4>Someone famous <br /><span>Web designer</span></h4>
+            </div>
+            <div class="testimonial-box">
+              <div class="image-box">
+                <img src="https://picsum.photos/200" />
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                suscipit, dicta doloremque fuga illum quam nobis! Perspiciatis,
+                aut. Saepe, quisquam?
+              </p>
+              <h4>Someone famous <br /><span>Web designer</span></h4>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact adjust" id="contact">
+            <div class="title">
+              <h2>Let's say hi</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat illo
+                iusto aliquam voluptates quisquam velit id aliquid dolor a suscipit.
+              </p>
+            </div>
+            <div class="form-box">
+              <div class="row">
+                <input type="text" name="" placeholder="First Name" />
+                <input type="text" name="" placeholder="Last Name" />
+              </div>
+              <div class="row">
+                <input type="text" name="" placeholder="Email" />
+                <input type="text" name="" placeholder="Mobile No." />
+              </div>
+              <div class="row2">
+                <textarea placeholder="Message" id="" cols="30" rows="10"></textarea>
+              </div>
+              <div class="row2">
+                <input type="submit" value="Send" />
+              </div>
+            </div>
+          </section>
+
+          <div class="copyright">
+            <p>Copyright <i class='bx bx-copyright'></i> 2023 Umut Yenidil. All Rights Reserved.</p>
+          </div>
+      </main>
     </div>
-    
     <script type="text/javascript" src="script.js"></script>
-</body>
+  </body>
 </html>
